@@ -1,0 +1,32 @@
+<!--pages/mydownload/mydownload.wxml-->
+<view wx:if="{{record}}" class="cu-list  margin">
+  <view wx:for="{{downloadList}}"  wx:for-index="idx" wx:for-item="item" class="cu-item bg-green  {{idx%2 == 0?'':'light'}} padding margin-bottom-sm">
+  
+  
+
+    <view class="flex">
+      <view class="flex-sub   radius">下载链接</view>
+      <view class="flex-treble   radius"> {{item.url}}</view>
+    </view>
+    <view class="flex">
+      <view class="flex-sub    radius">提取码</view>
+      <view class="flex-treble   radius">{{item.code}}</view>
+    </view>
+    <view class="flex">
+      <view class="flex-sub  radius">邮箱</view>
+      <view class="flex-treble radius">{{item.mail}}</view>
+    </view>
+  </view>
+</view>
+<view wx:else class="flex justify-center margin-tb-xl">
+      <view>
+        <view class="flex justify-center">
+          <image src="/images/wangpan.png" mode="aspectFit" class="bg-image"></image>
+        </view>
+        
+       <view class="text-grey margin-tb-sm">
+        你暂时还没有下载记录哦~
+      </view>
+      </view>
+     
+</view>

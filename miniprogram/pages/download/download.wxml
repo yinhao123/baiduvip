@@ -1,0 +1,42 @@
+<!--pages/download/download.wxml-->
+<view class="padding">
+  <view>
+    <view class="text-center text-bold padding">
+      下载须知
+    </view>
+    <view class="text-grey  padding radius shadow shadow-lg">
+      <view>
+        1.网盘资源下载，本站纯人工下载后通过QQ邮箱发送，1G以下的可一次下载。超过1G的部分请分次下载。
+        <view>
+          2.请提前检查好分享的链接是否可用，如果连接失效，站长将无法提供文件下载服务。
+        </view>
+        <view>
+          3.下载的文件须符合国家法律法规，违反国家法规的文件一律不予下载。
+        </view>
+        <view>
+          4.纯人工下载发送，提交后请耐心等待，不要重复提交哦。(*╹▽╹*)
+        </view>
+         <view>
+          5.技术支持请联系：yinhao1205@qq.com。
+        </view>
+      </view>
+    </view>
+  </view>
+  <form  bindsubmit="submitDownInfo">
+    <view class="cu-form-group margin-top">
+      <view class="title"> 邮 箱 </view>
+      <input placeholder="请输入接收文件的QQ邮箱" name="mail" ></input>
+    </view>
+    <view class="cu-form-group align-start">
+      <view class="title"> 链 接 </view>
+      <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput"  name="url" placeholder="请填写链接，像这样：https://pan.baidu.com/s/1U-3ND3IX3gyI3Svzcvk7Fw"></textarea>
+    </view>
+    <view class="cu-form-group ">
+      <view class="title">提取码</view>
+      <input name="code"  placeholder="请填写四位的提取码，没有就不填"></input>
+    </view>
+    <view class="padding flex flex-direction">
+      <button formType="submit" class="cu-btn bg-blue margin-tb-sm lg">提交</button>
+    </view>
+  </form>
+</view>

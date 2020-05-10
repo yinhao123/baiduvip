@@ -1,0 +1,5 @@
+/* pages/mydownload/mydownload.wxss */
+.bg-image{
+  width: 100rpx;
+  height: 100rpx;
+}

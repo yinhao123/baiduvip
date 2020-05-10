@@ -1,0 +1,21 @@
+<view class="padding ">
+  <view class="flex">
+    <view class="flex-sub  text-center text-bold  "><view class="cu-avatar xl round  bg-gradual-orange ">{{times}}</view></view>
+  </view>
+   <view class="flex">
+    <view class="flex-sub text-yellow text-sm padding text-center  radius" bindtap="navToPointPage"> 当前可用下载次数</view>
+  </view>
+
+  <view class="flex">
+    <view class="flex-sub bg-red text-center padding-lg margin-tb-xl  margin-lr-sm radius" bindtap="navToPointPage">获取下载次数</view>
+  </view>
+
+
+  <view class="flex">
+    <view class="flex-sub bg-blue text-center padding-lg margin-tb-xl  margin-lr-sm radius" bindtap="navToDownoadPage">下载网盘文件</view>
+  </view>
+
+  <view class="flex">
+    <view class="flex-sub bg-green text-center padding-lg margin-tb-xl  margin-lr-sm radius" bindtap="navToMyDownoadPage">我的下载列表</view>
+  </view>
+</view>
